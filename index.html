@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- load font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapiswww.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
+
+    <style>
+      body {
+        /* use font here */
+        font-family: "poppins", "Arial", "sans-serif";
+      }
+    </style>
+
+    <title>My Gallery</title>
+  </head>
+  <body class="bg-wd-black flex flex-col">
+    <header class="flex flex-col justify-center items-center">
+      <h1 class="text-primary text-xl font-bold">Web Development Bootcamp</h1>
+      <p class="text-primary">My Photo Gallery</p>
+    </header>
+
+    <main>
+      <section class="flex flex-col justify-center items-center w-full">
+        <div
+          class="text-primary flex align-centers w-full before:flex-1 before:content-[''] before:p-[3px] before:bg-primary before:m-[10px] after:flex-1 after:content-[''] after:p-[3px] after:bg-primary after:m-[10px]"
+        >
+          Features
+        </div>
+      </section>
+      <section class="flex flex-col justify-center items-center w-full">
+        <div
+          class="text-primary flex align-centers w-full before:flex-1 before:content-[''] before:p-[3px] before:bg-primary before:m-[10px] after:flex-1 after:content-[''] after:p-[3px] after:bg-primary after:m-[10px]"
+        >
+          My Work
+        </div>
+      </section>
+      <section class="flex flex-col justify-center items-center w-full">
+        <div
+          class="text-primary flex align-centers w-full before:flex-1 before:content-[''] before:p-[3px] before:bg-primary before:m-[10px] after:flex-1 after:content-[''] after:p-[3px] after:bg-primary after:m-[10px]"
+        >
+          Gallery
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex justify-between text-white w-10/12 self-center">
+      <div>my self</div>
+      <div>social</div>
+    </footer>
+
+    <script src="tailwind.config.js"></script>
+  </body>
+</html>

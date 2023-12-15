@@ -1,5 +1,5 @@
 tailwind.config = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       // you can add configuration (customization) here
@@ -14,4 +14,4 @@ tailwind.config = {
   },
 };
 
-module.export = tailwind.config;
+// module.exports = tailwind.config;

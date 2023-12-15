@@ -9,10 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapiswww.com/css2?family=Poppins:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="index.css" rel="stylesheet" />
+    <!-- load tailwind.config.js -->
+    <script src="tailwind.config.js"></script>
+
+    <!-- load fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- load our custom css -->
+    <!-- <link href="index.css" rel="stylesheet" /> -->
 
     <style>
       body {
@@ -54,10 +66,55 @@
     </main>
 
     <footer class="flex justify-between text-white w-10/12 self-center">
-      <div>my self</div>
-      <div>social</div>
-    </footer>
+      <section class="flex flex-col align-start w-2/6 gap-2">
+        <h1 class="text-xl text-white font-bold">Jane Doe</h1>
+        <p class="text-sm">
+          Hello, beautiful passerby. I’m Jane Doe. A passionate photographer. I
+          love to bla bla bla.... bla bla bla.... bla bla bla.... bla bla
+          bla.... bla bla bla.... bla bla bla.... bla bla bla.... I’m available
+          for hiring.
+        </p>
+        <form
+          onsubmit="(e)=>{
+            // TODO: submit is not triggered?
+          e.preventDefault();
+            console.log('your email is',e.target.elements.email.value);
+            alert('your email is',e.target.elements.email.value);
+            return false;
+            }"
+          class="flex flex-col gap-2 w-1/2"
+        >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            class="text-wd-darkgrey p-1 text-xs"
+          />
+          <button type="submit" class="bg-primary text-wd-darkgrey p-1 text-xs">
+            Subscribe <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </section>
+      <section class="flex flex-col align-start w-2/6">
+        <h1 class="text-xl text-white font-bold">Get In Touch</h1>
 
-    <script src="tailwind.config.js"></script>
+        <p class="text-sm">
+          MBK Tower 20th Floor, 444, Phaya Thai Rd, Wang Mai, Pathum Wan,
+          Bangkok 10330
+        </p>
+        <p class="text-sm">Email: jane.doe@email.com</p>
+        <div class="flex flex-start justify-evenly w-1/3">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </section>
+    </footer>
+    <section
+      class="flex flex-col justify-center items-center w-full text-white border-t-2 border-primary mt-2"
+    >
+      © 2023, Jane Doe. All RIghts Reserved.
+    </section>
   </body>
 </html>

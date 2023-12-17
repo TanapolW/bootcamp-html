@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Prompt:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <!-- load tailwind.config.js -->
@@ -35,84 +35,187 @@
 
     <title>My Gallery</title>
   </head>
-  <body class="bg-wd-black flex flex-col">
-    <header class="flex flex-col justify-center items-center">
-      <h1 class="text-primary text-xl font-bold">Web Development Bootcamp</h1>
-      <p class="text-primary">My Photo Gallery</p>
+  <body class="bg-wd-black flex flex-col gap-12">
+    <header
+      class="h-[400px] flex flex-col justify-center items-center w-full self-center bg-hero-pattern bg-center bg-no-repeat bg-cover"
+    >
+      <h1 class="text-primary text-5xl font-bold text-center">
+        Web Development<br />Bootcamp
+      </h1>
+      <p class="text-primary text-[32px]">My Photo Gallery</p>
     </header>
 
-    <main>
-      <section class="flex flex-col justify-center items-center w-full">
+    <main class="px-8 flex flex-col gap-12">
+      <section
+        class="flex flex-col justify-center items-center w-full text-white gap-6"
+      >
         <div
-          class="text-primary flex align-centers w-full before:flex-1 before:content-[''] before:p-[3px] before:bg-primary before:m-[10px] after:flex-1 after:content-[''] after:p-[3px] after:bg-primary after:m-[10px]"
+          class="w-full text-primary text-4xl flex items-center gap-10 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
         >
           Features
         </div>
-      </section>
-      <section class="flex flex-col justify-center items-center w-full">
-        <div
-          class="text-primary flex align-centers w-full before:flex-1 before:content-[''] before:p-[3px] before:bg-primary before:m-[10px] after:flex-1 after:content-[''] after:p-[3px] after:bg-primary after:m-[10px]"
-        >
-          My Work
+
+        <div class="flex space-between gap-6 px-6">
+          <img
+            src="assets/features/image-bootcamp-feature.png"
+            alt="feature 1"
+            class="flex-[30%]"
+          />
+          <div class="flex-[70%] bg-wd-darkgrey p-6">
+            <h1 class="text-[32px] font-bold">City Skyline</h1>
+            <p class="text-2xl font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed
+              euismod diam. In pretium in odio at pretium. Aenean in suscipit
+              enim. Aliquam lacus nulla, dapibus a eleifend sed, gravida sit
+              amet justo. Nulla vel diam at orci semper mattis.
+            </p>
+          </div>
+        </div>
+        <div class="flex space-between flex-row-reverse gap-6 px-6">
+          <img
+            src="assets/features/image-bootcamp-feature-1.png"
+            alt="feature 1"
+            class="flex-[30%]"
+          />
+          <div class="flex-[70%] bg-wd-darkgrey p-6">
+            <h1 class="text-[32px] font-bold">Corporate Stockphoto</h1>
+            <p class="text-2xl font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed
+              euismod diam. In pretium in odio at pretium. Aenean in suscipit
+              enim. Aliquam lacus nulla, dapibus a eleifend sed, gravida sit
+              amet justo. Nulla vel diam at orci semper mattis.
+            </p>
+          </div>
         </div>
       </section>
       <section class="flex flex-col justify-center items-center w-full">
         <div
-          class="text-primary flex align-centers w-full before:flex-1 before:content-[''] before:p-[3px] before:bg-primary before:m-[10px] after:flex-1 after:content-[''] after:p-[3px] after:bg-primary after:m-[10px]"
+          class="w-full text-primary text-4xl flex items-center gap-10 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
+        >
+          My Work
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+          <div class="w-full md:w-[389px] h-[291px]">
+            <div class="overflow-hidden">
+              <img
+                src="assets/grid/image-bootcamp.png"
+                alt="Image 1"
+                class="w-full h-full object-cover object-fill"
+              />
+            </div>
+          </div>
+
+          <div class="w-full md:w-[389px] h-[291px]">
+            <div class="overflow-hidden">
+              <img
+                src="assets/grid/image-bootcamp-1.png"
+                alt="Image 2"
+                class="w-full h-full object-cover object-fill"
+              />
+            </div>
+          </div>
+
+          <div class="w-full md:w-[389px] h-[291px]">
+            <div class="overflow-hidden">
+              <img
+                src="assets/grid/image-bootcamp-2.png"
+                alt="Image 3"
+                class="w-full h-full object-cover object-fill"
+              />
+            </div>
+          </div>
+
+          <div class="w-full md:w-[389px] h-[291px]">
+            <div class="overflow-hidden">
+              <img
+                src="assets/grid/image-bootcamp-3.png"
+                alt="Image 4"
+                class="w-full h-full object-cover object-fill"
+              />
+            </div>
+          </div>
+
+          <div class="w-full md:w-[389px] h-[291px]">
+            <div class="overflow-hidden">
+              <img
+                src="assets/grid/image-bootcamp-4.png"
+                alt="Image 5"
+                class="w-full h-full object-cover object-fill"
+              />
+            </div>
+          </div>
+
+          <div class="w-full md:w-[389px] h-[291px]">
+            <div class="overflow-hidden">
+              <img
+                src="assets/grid/image-bootcamp-5.png"
+                alt="Image 6"
+                class="w-full h-full object-cover object-fill"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col justify-center items-center w-full">
+        <div
+          class="w-full text-primary text-4xl flex items-center gap-10 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
         >
           Gallery
         </div>
       </section>
     </main>
 
-    <footer class="flex justify-between text-white w-10/12 self-center">
-      <section class="flex flex-col align-start w-2/6 gap-2">
-        <h1 class="text-xl text-white font-bold">Jane Doe</h1>
-        <p class="text-sm">
+    <footer class="flex justify-between text-white w-10/12 self-center px-8">
+      <section class="flex flex-col align-start w-2/6 gap-6">
+        <h1 class="text-[32px] text-white font-bold">Jane Doe</h1>
+        <p class="text-base">
           Hello, beautiful passerby. I’m Jane Doe. A passionate photographer. I
           love to bla bla bla.... bla bla bla.... bla bla bla.... bla bla
           bla.... bla bla bla.... bla bla bla.... bla bla bla.... I’m available
           for hiring.
         </p>
         <form
-          onsubmit="(e)=>{
-            // TODO: submit is not triggered?
+          onsubmit="(function (e)  {
           e.preventDefault();
-            console.log('your email is',e.target.elements.email.value);
-            alert('your email is',e.target.elements.email.value);
-            return false;
-            }"
-          class="flex flex-col gap-2 w-1/2"
+          alert(`You (${e.target.elements.email.value}) have subscribed!`);
+          return false;
+        })(event)"
+          class="flex flex-col gap-2 w-full"
         >
           <input
             type="email"
             id="email"
             name="email"
             placeholder="Enter your email"
-            class="text-wd-darkgrey p-1 text-xs"
+            class="text-wd-darkgrey py-3.5 pl-4 text-base"
           />
-          <button type="submit" class="bg-primary text-wd-darkgrey p-1 text-xs">
+          <button
+            type="submit"
+            class="bg-primary text-wd-darkgrey py-3 text-base font-bold text-center w-1/2"
+          >
             Subscribe <i class="fa-solid fa-arrow-right"></i>
           </button>
         </form>
       </section>
-      <section class="flex flex-col align-start w-2/6">
-        <h1 class="text-xl text-white font-bold">Get In Touch</h1>
+      <section class="flex flex-col align-start w-2/6 gap-6">
+        <h1 class="text-[32px] text-white font-bold">Get In Touch!</h1>
 
-        <p class="text-sm">
+        <p class="text-base">
           MBK Tower 20th Floor, 444, Phaya Thai Rd, Wang Mai, Pathum Wan,
           Bangkok 10330
         </p>
-        <p class="text-sm">Email: jane.doe@email.com</p>
-        <div class="flex flex-start justify-evenly w-1/3">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-x-twitter"></i>
+        <p class="text-base">Email: jane.doe@email.com</p>
+        <div class="flex flex-start justify-evenly w-1/3 gap-4">
+          <i class="fa-brands fa-facebook fa-2x text-[#898989]"></i>
+          <i class="fa-brands fa-linkedin fa-2x text-[#898989]"></i>
+          <i class="fa-brands fa-x-twitter fa-2x text-[#898989]"></i>
         </div>
       </section>
     </footer>
+
     <section
-      class="flex flex-col justify-center items-center w-full text-white border-t-2 border-primary mt-2"
+      class="text-center w-full text-white text-base font-bold border-t-2 border-primary py-12 mt-12 mx-8"
     >
       © 2023, Jane Doe. All RIghts Reserved.
     </section>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- TODO: Fix spacing + some styling (ensure consistency with the design) -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -35,14 +36,14 @@
 
     <title>My Gallery</title>
   </head>
-  <body class="bg-wd-black flex flex-col gap-12">
+  <body class="bg-wd-black flex flex-col">
     <header
       class="h-[400px] flex flex-col justify-center items-center w-full self-center bg-hero-pattern bg-center bg-no-repeat bg-cover"
     >
       <h1 class="text-primary text-5xl font-bold text-center">
         Web Development<br />Bootcamp
       </h1>
-      <p class="text-primary text-[32px]">My Photo Gallery</p>
+      <p class="text-primary text-2xl">My Photo Gallery</p>
     </header>
 
     <main class="px-8 flex flex-col gap-12">
@@ -50,7 +51,7 @@
         class="flex flex-col justify-center items-center w-full text-white gap-6"
       >
         <div
-          class="w-full text-primary text-4xl flex items-center gap-10 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
+          class="w-full text-primary text-4xl flex items-center gap-10 my-12 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
         >
           Features
         </div>
@@ -62,7 +63,7 @@
             class="flex-[30%]"
           />
           <div class="flex-[70%] bg-wd-darkgrey p-6">
-            <h1 class="text-[32px] font-bold">City Skyline</h1>
+            <h1 class="text-2xl font-bold">City Skyline</h1>
             <p class="text-2xl font-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed
               euismod diam. In pretium in odio at pretium. Aenean in suscipit
@@ -78,7 +79,7 @@
             class="flex-[30%]"
           />
           <div class="flex-[70%] bg-wd-darkgrey p-6">
-            <h1 class="text-[32px] font-bold">Corporate Stockphoto</h1>
+            <h1 class="text-2xl font-bold">Corporate Stockphoto</h1>
             <p class="text-2xl font-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed
               euismod diam. In pretium in odio at pretium. Aenean in suscipit
@@ -90,14 +91,14 @@
       </section>
       <section class="flex flex-col justify-center items-center w-full">
         <div
-          class="w-full text-primary text-4xl flex items-center gap-10 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
+          class="w-full text-primary text-4xl flex items-center gap-10 my-12 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
         >
           My Work
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
           <div class="w-full md:w-[389px] h-[291px]">
-            <div class="overflow-hidden">
+            <div class="overflow-hidden object-fit">
               <img
                 src="assets/grid/image-bootcamp.png"
                 alt="Image 1"
@@ -159,30 +160,82 @@
       </section>
       <section class="flex flex-col justify-center items-center w-full">
         <div
-          class="w-full text-primary text-4xl flex items-center gap-10 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
+          class="w-full text-primary text-4xl flex items-center gap-10 my-12 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
         >
           Gallery
+        </div>
+
+        <div class="w-full relative overflow-hidden">
+          <div class="w-full h-[400px]">
+            <img
+              class="mySlides h-full w-full object-cover"
+              src="assets/slider/slide1.jpg"
+              alt="slide1"
+            />
+            <img
+              class="mySlides h-full w-full object-cover"
+              src="assets/slider/slide2.jpg"
+              alt="slide2"
+            />
+            <img
+              class="mySlides h-full w-full object-cover"
+              src="assets/slider/slide3.jpg"
+              alt="slide3"
+            />
+            <img
+              class="mySlides h-full w-full object-cover"
+              src="assets/slider/slide4.jpg"
+              alt="slide4"
+            />
+          </div>
+
+          <div class="flex justify-center w-full gap-3 mt-6">
+            <div
+              class="dot-nav rounded-full bg-primary h-3 w-3"
+              onclick="goToSlide(0)"
+            ></div>
+            <div
+              class="dot-nav rounded-full bg-primary h-3 w-3"
+              onclick="goToSlide(1)"
+            ></div>
+            <div
+              class="dot-nav rounded-full bg-primary h-3 w-3"
+              onclick="goToSlide(2)"
+            ></div>
+            <div
+              class="dot-nav rounded-full bg-primary h-3 w-3"
+              onclick="goToSlide(3)"
+            ></div>
+          </div>
+
+          <a
+            class="text-white absolute top-1/2 left-3 cursor-pointer"
+            onclick="changeSlide(-1)"
+            ><i class="fa-solid fa-chevron-left fa-2xl"></i
+          ></a>
+          <a
+            class="text-white absolute top-1/2 right-3 cursor-pointer"
+            onclick="changeSlide(1)"
+            ><i class="fa-solid fa-chevron-right fa-2xl"></i
+          ></a>
+
+          >
         </div>
       </section>
     </main>
 
-    <footer class="flex justify-between text-white w-10/12 self-center px-8">
+    <footer
+      class="flex justify-between text-white w-10/12 self-center px-8 mt-[120px]"
+    >
       <section class="flex flex-col align-start w-2/6 gap-6">
-        <h1 class="text-[32px] text-white font-bold">Jane Doe</h1>
+        <h1 class="text-2xl text-white font-bold">Jane Doe</h1>
         <p class="text-base">
           Hello, beautiful passerby. I’m Jane Doe. A passionate photographer. I
           love to bla bla bla.... bla bla bla.... bla bla bla.... bla bla
           bla.... bla bla bla.... bla bla bla.... bla bla bla.... I’m available
           for hiring.
         </p>
-        <form
-          onsubmit="(function (e)  {
-          e.preventDefault();
-          alert(`You (${e.target.elements.email.value}) have subscribed!`);
-          return false;
-        })(event)"
-          class="flex flex-col gap-2 w-full"
-        >
+        <form onsubmit="submitForm(event)" class="flex flex-col gap-2 w-full">
           <input
             type="email"
             id="email"
@@ -199,7 +252,7 @@
         </form>
       </section>
       <section class="flex flex-col align-start w-2/6 gap-6">
-        <h1 class="text-[32px] text-white font-bold">Get In Touch!</h1>
+        <h1 class="text-2xl text-white font-bold">Get In Touch!</h1>
 
         <p class="text-base">
           MBK Tower 20th Floor, 444, Phaya Thai Rd, Wang Mai, Pathum Wan,
@@ -220,4 +273,46 @@
       © 2023, Jane Doe. All RIghts Reserved.
     </section>
   </body>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert(`You (${e.target.elements.email.value}) have subscribed!`);
+      return false;
+    }
+
+    let slideIndex = 0;
+    showDivs(slideIndex);
+
+    function goToSlide(n) {
+      slideIndex = n;
+      showDivs(slideIndex);
+    }
+    function changeSlide(n) {
+      slideIndex += n;
+      showDivs(slideIndex);
+    }
+
+    function showDivs(n) {
+      const slideImages = document.getElementsByClassName("mySlides");
+      const dotNavigations = document.getElementsByClassName("dot-nav");
+      if (n >= slideImages.length) {
+        slideIndex = 0;
+      }
+      if (n < 0) {
+        slideIndex = slideImages.length - 1;
+      }
+      for (let i = 0; i < slideImages.length; i++) {
+        slideImages[i].style.display = "none";
+        dotNavigations[i].classList.remove("bg-primary");
+        dotNavigations[i].classList.add("border-primary");
+        dotNavigations[i].classList.add("border");
+      }
+      console.log("da index", slideIndex);
+      slideImages[slideIndex].style.display = "block";
+      dotNavigations[slideIndex].classList.remove("border-primary");
+      dotNavigations[slideIndex].classList.remove("border");
+      dotNavigations[slideIndex].classList.add("bg-primary");
+    }
+  </script>
 </html>

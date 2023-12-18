@@ -12,7 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern":
-          "linear-gradient(to left, rgba(0,0,0, 0), rgba(0,0,0,1)), url('assets/hero.jpg')",
+          "linear-gradient(to left, rgba(0,0,0, 0), rgba(0,0,0,1)), url('../assets/hero.jpg')",
       },
     },
   },

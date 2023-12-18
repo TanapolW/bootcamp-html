@@ -254,18 +254,18 @@
     }
 
     let slideIndex = 0;
-    showDivs(slideIndex);
+    showSlide(slideIndex);
 
     function goToSlide(n) {
       slideIndex = n;
-      showDivs(slideIndex);
+      showSlide(slideIndex);
     }
     function changeSlide(n) {
       slideIndex += n;
-      showDivs(slideIndex);
+      showSlide(slideIndex);
     }
 
-    function showDivs(n) {
+    function showSlide(n) {
       const slideImages = document.getElementsByClassName("mySlides");
       const dotNavigations = document.getElementsByClassName("dot-nav");
       if (n >= slideImages.length) {

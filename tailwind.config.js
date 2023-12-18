@@ -1,8 +1,8 @@
-tailwind.config = {
-  content: ["./**/*.{html,js}"],
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      // you can add configuration (customization) here
       colors: {
         primary: "#DEF81D",
         "wd-white": "#FFFFFF",
@@ -16,6 +16,5 @@ tailwind.config = {
       },
     },
   },
+  plugins: [],
 };
-
-// module.exports = tailwind.config;

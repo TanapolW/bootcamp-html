@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<!-- TODO: Fix spacing + some styling (ensure consistency with the design) -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- load font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Prompt:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <!-- load tailwind.config.js -->
     <script src="tailwind.config.js"></script>
 
@@ -25,14 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- load our custom css -->
-    <!-- <link href="index.css" rel="stylesheet" /> -->
-
-    <style>
-      body {
-        /* use font here */
-        font-family: "poppins", "Arial", "sans-serif";
-      }
-    </style>
+    <link href="index.css" rel="stylesheet" />
 
     <title>My Gallery</title>
   </head>
@@ -46,9 +31,9 @@
       <p class="text-primary text-2xl">My Photo Gallery</p>
     </header>
 
-    <main class="px-8 flex flex-col gap-12">
+    <main class="px-8 flex flex-col">
       <section
-        class="flex flex-col justify-center items-center w-full text-white gap-6"
+        class="flex flex-col justify-center items-center w-full text-white"
       >
         <div
           class="w-full text-primary text-4xl flex items-center gap-10 my-12 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
@@ -56,36 +41,45 @@
           Features
         </div>
 
-        <div class="flex space-between gap-6 px-6">
-          <img
-            src="assets/features/image-bootcamp-feature.png"
-            alt="feature 1"
-            class="flex-[30%]"
-          />
-          <div class="flex-[70%] bg-wd-darkgrey p-6">
-            <h1 class="text-2xl font-bold">City Skyline</h1>
-            <p class="text-2xl font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed
-              euismod diam. In pretium in odio at pretium. Aenean in suscipit
-              enim. Aliquam lacus nulla, dapibus a eleifend sed, gravida sit
-              amet justo. Nulla vel diam at orci semper mattis.
-            </p>
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col lg:flex-row space-between gap-6 px-6">
+            <img
+              src="assets/features/image-bootcamp-feature.png"
+              alt="feature 1"
+              class="flex-[30%]"
+            />
+            <div class="flex-[70%] bg-wd-darkgrey p-6">
+              <h1 class="text-2xl font-bold mb-4">City Skyline</h1>
+              <p class="text-2xl font-light">
+                Unveiling the urban tapestry through my lens. Dive into a
+                collection of breathtaking cityscapes that capture the pulse and
+                energy of iconic skylines. From the glittering lights to
+                architectural marvels, each photograph tells a story of the
+                dynamic beauty that defines our urban landscapes. Explore the
+                City Skyline section and witness the metropolis come alive in
+                every frame.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="flex space-between flex-row-reverse gap-6 px-6">
-          <img
-            src="assets/features/image-bootcamp-feature-1.png"
-            alt="feature 1"
-            class="flex-[30%]"
-          />
-          <div class="flex-[70%] bg-wd-darkgrey p-6">
-            <h1 class="text-2xl font-bold">Corporate Stockphoto</h1>
-            <p class="text-2xl font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed
-              euismod diam. In pretium in odio at pretium. Aenean in suscipit
-              enim. Aliquam lacus nulla, dapibus a eleifend sed, gravida sit
-              amet justo. Nulla vel diam at orci semper mattis.
-            </p>
+          <div
+            class="flex flex-col space-between lg:flex-row-reverse gap-6 px-6"
+          >
+            <img
+              src="assets/features/image-bootcamp-feature-1.png"
+              alt="feature 1"
+              class="flex-[30%]"
+            />
+            <div class="flex-[70%] bg-wd-darkgrey p-6 gap-4">
+              <h1 class="text-2xl font-bold mb-4">Corporate Stockphoto</h1>
+              <p class="text-2xl font-light">
+                A visual narrative of professionalism. Explore compelling
+                executive portraits, team dynamics, and operational excellence,
+                each frame narrating the story of businesses with authenticity
+                and artistry. Immerse yourself in the Corporate Photo section
+                and experience the visual poetry that captures the strength,
+                innovation, and collaborative spirit driving corporate success.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -96,71 +90,49 @@
           My Work
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-          <div class="w-full md:w-[389px] h-[291px]">
-            <div class="overflow-hidden object-fit">
-              <img
-                src="assets/grid/image-bootcamp.png"
-                alt="Image 1"
-                class="w-full h-full object-cover object-fill"
-              />
-            </div>
-          </div>
+        <div
+          class="w-full grid grid-cols-1 place-items-center md:grid-cols-2 xl:grid-cols-3 gap-6"
+        >
+          <img
+            src="assets/grid/image-bootcamp.png"
+            alt="Image 1"
+            class="w-full h-auto lg:h-[291px] object-cover"
+          />
 
-          <div class="w-full md:w-[389px] h-[291px]">
-            <div class="overflow-hidden">
-              <img
-                src="assets/grid/image-bootcamp-1.png"
-                alt="Image 2"
-                class="w-full h-full object-cover object-fill"
-              />
-            </div>
-          </div>
+          <img
+            src="assets/grid/image-bootcamp-1.png"
+            alt="Image 2"
+            class="w-full h-auto lg:h-[291px] object-cover"
+          />
 
-          <div class="w-full md:w-[389px] h-[291px]">
-            <div class="overflow-hidden">
-              <img
-                src="assets/grid/image-bootcamp-2.png"
-                alt="Image 3"
-                class="w-full h-full object-cover object-fill"
-              />
-            </div>
-          </div>
+          <img
+            src="assets/grid/image-bootcamp-2.png"
+            alt="Image 3"
+            class="w-full h-auto lg:h-[291px] object-cover"
+          />
 
-          <div class="w-full md:w-[389px] h-[291px]">
-            <div class="overflow-hidden">
-              <img
-                src="assets/grid/image-bootcamp-3.png"
-                alt="Image 4"
-                class="w-full h-full object-cover object-fill"
-              />
-            </div>
-          </div>
+          <img
+            src="assets/grid/image-bootcamp-3.png"
+            alt="Image 4"
+            class="w-full h-auto lg:h-[291px] object-cover"
+          />
 
-          <div class="w-full md:w-[389px] h-[291px]">
-            <div class="overflow-hidden">
-              <img
-                src="assets/grid/image-bootcamp-4.png"
-                alt="Image 5"
-                class="w-full h-full object-cover object-fill"
-              />
-            </div>
-          </div>
+          <img
+            src="assets/grid/image-bootcamp-4.png"
+            alt="Image 5"
+            class="w-full h-auto lg:h-[291px] object-cover"
+          />
 
-          <div class="w-full md:w-[389px] h-[291px]">
-            <div class="overflow-hidden">
-              <img
-                src="assets/grid/image-bootcamp-5.png"
-                alt="Image 6"
-                class="w-full h-full object-cover object-fill"
-              />
-            </div>
-          </div>
+          <img
+            src="assets/grid/image-bootcamp-5.png"
+            alt="Image 6"
+            class="w-full h-auto lg:h-[291px] object-cover"
+          />
         </div>
       </section>
       <section class="flex flex-col justify-center items-center w-full">
         <div
-          class="w-full text-primary text-4xl flex items-center gap-10 my-12 before:content-[''] before:h-[1px] before:bg-primary before:grow after:content-[''] after:h-[1px] after:bg-primary after:grow"
+          class="w-full text-primary text-4xl flex items-center gap-10 my-12 before:content-[''] before:h-px before:bg-primary before:grow after:content-[''] after:h-px after:bg-primary after:grow"
         >
           Gallery
         </div>
@@ -189,6 +161,17 @@
             />
           </div>
 
+          <a
+            class="text-white absolute top-[45%] left-3 cursor-pointer"
+            onclick="changeSlide(-1)"
+            ><i class="fa-solid fa-chevron-left fa-2xl"></i
+          ></a>
+          <a
+            class="text-white absolute top-[45%] right-3 cursor-pointer"
+            onclick="changeSlide(1)"
+            ><i class="fa-solid fa-chevron-right fa-2xl"></i
+          ></a>
+
           <div class="flex justify-center w-full gap-3 mt-6">
             <div
               class="dot-nav rounded-full bg-primary h-3 w-3"
@@ -207,17 +190,6 @@
               onclick="goToSlide(3)"
             ></div>
           </div>
-
-          <a
-            class="text-white absolute top-1/2 left-3 cursor-pointer"
-            onclick="changeSlide(-1)"
-            ><i class="fa-solid fa-chevron-left fa-2xl"></i
-          ></a>
-          <a
-            class="text-white absolute top-1/2 right-3 cursor-pointer"
-            onclick="changeSlide(1)"
-            ><i class="fa-solid fa-chevron-right fa-2xl"></i
-          ></a>
 
           >
         </div>
